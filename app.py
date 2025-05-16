@@ -32,7 +32,8 @@ def load_model():
         if not os.path.exists(Config.MODEL_DIR):
             os.makedirs(Config.MODEL_DIR)
             
-        model = tf.keras.models.load_model('C:/Users/gaikw/OneDrive/Desktop/SkinDiseaseDetection/src/backend/skin_disease_model.h5')
+
+model = tf.keras.models.load_model('model/skin_disease_model.h5')
         print("Model loaded successfully!")
         print(f"Model input shape: {model.input_shape}")
     except Exception as e:
